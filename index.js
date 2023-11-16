@@ -1,5 +1,6 @@
 const express = require("express");
 const cors = require("cors");
+const { MongoClient, ServerApiVersion } = require("mongodb");
 const app = express();
 require('dotenv').config();
 const port = process.env.PORT || 5000;
@@ -13,9 +14,8 @@ app.use(express.json());
 
 
 
-const { MongoClient, ServerApiVersion } = require("mongodb");
-// const uri =
-//   "mongodb+srv://SRHRestaurant:qnVefzvKAyPDPZLb@cluster0.dzik2b9.mongodb.net/?retryWrites=true&w=majority";
+
+
 const uri =
   `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@cluster0.dzik2b9.mongodb.net/?retryWrites=true&w=majority`;
 
@@ -38,8 +38,7 @@ async function run() {
 
     //! Users 
     app.post('/api/v1/users', async (req, res) => {
-        const user = req.body;
-        console.log(user);
+        const user = req.body.user;
         const result = await usersCollection.insertOne(user);
         res.send(result);
 
