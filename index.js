@@ -1,23 +1,25 @@
 const express = require("express");
 const cors = require("cors");
+var jwt = require("jsonwebtoken");
+var cookieParser = require('cookie-parser')
 const { MongoClient, ServerApiVersion } = require("mongodb");
 const app = express();
-require('dotenv').config();
+require("dotenv").config();
 const port = process.env.PORT || 5000;
 
+const secret = process.env.JWT_SECRET || "defaultSecret";
+
 //! middlewires
-app.use(cors({
-    origin: 'http://localhost:5173',
+app.use(
+  cors({
+    origin: "http://localhost:5173",
     credentials: true,
-  }));
+  })
+);
+app.use(cookieParser());
 app.use(express.json());
 
-
-
-
-
-const uri =
-  `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@cluster0.dzik2b9.mongodb.net/?retryWrites=true&w=majority`;
+const uri = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@cluster0.dzik2b9.mongodb.net/?retryWrites=true&w=majority`;
 
 // Create a MongoClient with a MongoClientOptions object to set the Stable API version
 const client = new MongoClient(uri, {
@@ -34,17 +36,29 @@ async function run() {
     await client.connect();
     // Send a ping to confirm a successful connection
 
-    const usersCollection =  client.db('SRHRestaurant').collection('users');
+    const usersCollection = client.db("SRHRestaurant").collection("users");
 
-    //! Users 
-    app.post('/api/v1/users', async (req, res) => {
-        const user = req.body.user;
-        const result = await usersCollection.insertOne(user);
-        res.send(result);
+    //! Auth
+    app.post("/api/v1/create-token", async (req, res) => {
+      const user = req.body;
+      console.log(user.email);
+      const token = jwt.sign(user, secret, { expiresIn: 60 * 60 });
+      console.log(token);
+      res
+        .cookie("token", token, {
+          httpOnly: true,
+          // secure: false,
+          // sameSite: 'none',
+        })
+        .send({ success: true });
+    });
 
-    })
-
-
+    //! Users
+    app.post("/api/v1/users", async (req, res) => {
+      const user = req.body.user;
+      const result = await usersCollection.insertOne(user);
+      res.send(result);
+    });
 
     await client.db("admin").command({ ping: 1 });
     console.log(
