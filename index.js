@@ -38,6 +38,8 @@ async function run() {
 
     const usersCollection = client.db("SRHRestaurant").collection("users");
 
+    const foodssCollection = client.db("SRHRestaurant").collection("foods");
+
     //! Auth
     app.post("/api/v1/create-token", async (req, res) => {
       const user = req.body;
@@ -59,6 +61,20 @@ async function run() {
       const result = await usersCollection.insertOne(user);
       res.send(result);
     });
+
+    //! Foods 
+    app.get("/api/v1/all-foods-items", async (req, res) => {
+      let query = {};
+      const page = Number(req.query.page);
+      const limit = Number(req.query.limit);
+      const skip = (page - 1) * limit;
+
+      const cursor = foodssCollection.find(query).skip(skip);
+
+      const result = await cursor.toArray();
+      res.send(result);
+
+    })
 
     await client.db("admin").command({ ping: 1 });
     console.log(
