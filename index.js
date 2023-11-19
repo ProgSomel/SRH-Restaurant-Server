@@ -1,7 +1,7 @@
 const express = require("express");
 const cors = require("cors");
 var jwt = require("jsonwebtoken");
-var cookieParser = require('cookie-parser')
+var cookieParser = require("cookie-parser");
 const { MongoClient, ServerApiVersion } = require("mongodb");
 const app = express();
 require("dotenv").config();
@@ -62,21 +62,25 @@ async function run() {
       res.send(result);
     });
 
-    //! Foods 
+    //! Foods
     app.get("/api/v1/all-foods-items", async (req, res) => {
       let query = {};
       const page = Number(req.query.page);
       const limit = Number(req.query.limit);
       const skip = (page - 1) * limit;
 
+      const foodName = req.query.foodName;
+      if (foodName) {
+        query.name = { $regex: new RegExp(foodName, "i") };
+      }
+
       const cursor = foodssCollection.find(query).skip(skip).limit(limit);
 
       const result = await cursor.toArray();
       const total = await foodssCollection.countDocuments();
       console.log(total);
-      res.send({ total ,result});
-
-    })
+      res.send({ total, result });
+    });
 
     await client.db("admin").command({ ping: 1 });
     console.log(
