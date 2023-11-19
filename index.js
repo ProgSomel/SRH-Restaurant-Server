@@ -69,10 +69,12 @@ async function run() {
       const limit = Number(req.query.limit);
       const skip = (page - 1) * limit;
 
-      const cursor = foodssCollection.find(query).skip(skip);
+      const cursor = foodssCollection.find(query).skip(skip).limit(limit);
 
       const result = await cursor.toArray();
-      res.send(result);
+      const total = await foodssCollection.countDocuments();
+      console.log(total);
+      res.send({ total ,result});
 
     })
 
