@@ -1,0 +1,312 @@
+[
+  {
+    "name": "Margherita Pizza",
+    "image": "https://i.ibb.co/HT2yN6C/pixxa.jpg",
+    "category": "Pizza",
+    "price": 12.99,
+    "quantity": 0,
+    "count": 0,
+    "description": {
+      "details": "Delicious Margherita pizza topped with fresh tomatoes, mozzarella, and basil.",
+      "ingredients": [
+        "Pizza dough",
+        "Tomatoes",
+        "Fresh mozzarella",
+        "Fresh basil leaves",
+        "Olive oil",
+        "Salt",
+        "Black pepper"
+      ],
+      "procedure": [
+        "Preheat the oven to 475°F (245°C).",
+        "Roll out the pizza dough on a floured surface.",
+        "Top the dough with sliced tomatoes, fresh mozzarella, and basil leaves.",
+        "Drizzle with olive oil and season with salt and black pepper.",
+        "Bake in the preheated oven for 12-15 minutes or until the crust is golden brown."
+      ]
+    },
+    "origin": "Italy",
+    "madeBy": "Pizzeria Italia"
+  },
+  {
+    "name": "Chicken Alfredo Pasta",
+    "image": "https://i.ibb.co/kS45z2L/pasta.jpg",
+    "category": "Pasta",
+    "price": 15.99,
+    "quantity": 0,
+    "count": 0,
+    "description": {
+      "details": "Creamy Alfredo pasta with grilled chicken and Parmesan cheese.",
+      "ingredients": [
+        "Fettuccine pasta",
+        "Chicken breast",
+        "Heavy cream",
+        "Parmesan cheese",
+        "Garlic",
+        "Butter",
+        "Salt",
+        "Black pepper",
+        "Fresh parsley (for garnish)"
+      ],
+      "procedure": [
+        "Cook the fettuccine pasta according to package instructions.",
+        "In a separate pan, cook chicken breast and set aside.",
+        "In the same pan, melt butter and sauté garlic until fragrant.",
+        "Add heavy cream, Parmesan cheese, salt, and black pepper. Stir until the sauce thickens.",
+        "Combine cooked pasta and grilled chicken with the Alfredo sauce.",
+        "Garnish with fresh parsley and serve."
+      ]
+    },
+    "origin": "Italy",
+    "madeBy": "Trattoria Italiana"
+  },
+  {
+    "name": "Caesar Salad",
+    "image": "https://i.ibb.co/WnjTqWH/salad.jpg",
+    "category": "Salad",
+    "price": 8.99,
+    "quantity": 0,
+    "count": 0,
+    "description": {
+      "details": "Fresh Caesar salad with crisp romaine lettuce, croutons, and Caesar dressing.",
+      "ingredients": [
+        "Romaine lettuce",
+        "Croutons",
+        "Parmesan cheese",
+        "Caesar dressing"
+      ],
+      "procedure": [
+        "Wash and chop the romaine lettuce.",
+        "Add croutons and Parmesan cheese.",
+        "Toss with Caesar dressing until well coated.",
+        "Serve chilled."
+      ]
+    },
+    "origin": "United States",
+    "madeBy": "Salad Express"
+  },
+  {
+    "name": "Beef Burger",
+    "image": "https://i.ibb.co/L5hxNSC/burger.jpg",
+    "category": "Burger",
+    "price": 9.99,
+    "quantity": 0,
+    "count": 0,
+    "description": {
+      "details": "Juicy beef burger with lettuce, tomato, onion, and your choice of condiments.",
+      "ingredients": [
+        "Ground beef",
+        "Burger buns",
+        "Lettuce",
+        "Tomato",
+        "Onion",
+        "Condiments of your choice"
+      ],
+      "procedure": [
+        "Form ground beef into patties.",
+        "Grill or cook the patties to your desired level of doneness.",
+        "Toast the burger buns.",
+        "Assemble the burger with lettuce, tomato, onion, and condiments.",
+        "Serve and enjoy!"
+      ]
+    },
+    "origin": "United States",
+    "madeBy": "Burger Haven"
+  },
+  {
+    "name": "Chocolate Brownie",
+    "image": "https://i.ibb.co/rmRBgYM/brownie.jpg",
+    "category": "Dessert",
+    "price": 5.99,
+    "quantity": 0,
+    "count": 0,
+    "description": {
+      "details": "Decadent chocolate brownie served with a scoop of vanilla ice cream.",
+      "ingredients": [
+        "All-purpose flour",
+        "Cocoa powder",
+        "Butter",
+        "Sugar",
+        "Eggs",
+        "Vanilla extract",
+        "Salt",
+        "Vanilla ice cream (for serving)"
+      ],
+      "procedure": [
+        "Preheat the oven to 350°F (175°C).",
+        "Mix flour, cocoa powder, and salt in a bowl.",
+        "Melt butter and mix with sugar, eggs, and vanilla extract.",
+        "Combine wet and dry ingredients.",
+        "Pour the batter into a greased baking pan and bake for 20-25 minutes.",
+        "Serve with a scoop of vanilla ice cream."
+      ]
+    },
+    "origin": "United States",
+    "madeBy": "Sweet Delights Bakery"
+  },
+  {
+    "name": "Vegetarian Sushi",
+    "image": "https://i.ibb.co/xGDMRsK/susi.jpg",
+    "category": "Sushi",
+    "price": 10.99,
+    "quantity": 0,
+    "count": 0,
+    "description": {
+      "details": "A delightful assortment of vegetarian sushi rolls with fresh vegetables and avocado.",
+      "ingredients": [
+        "Sushi rice",
+        "Nori (seaweed)",
+        "Cucumber",
+        "Carrot",
+        "Avocado",
+        "Soy sauce",
+        "Pickled ginger",
+        "Wasabi"
+      ],
+      "procedure": [
+        "Cook sushi rice and let it cool.",
+        "Place a sheet of nori on a bamboo sushi mat.",
+        "Spread a layer of rice on the nori.",
+        "Add sliced cucumber, carrot, and avocado.",
+        "Roll the sushi tightly and cut into bite-sized pieces.",
+        "Serve with soy sauce, pickled ginger, and wasabi."
+      ]
+    },
+    "origin": "Japan",
+    "madeBy": "Sushi Masters"
+  },
+  {
+    "name": "Mango Tango Smoothie",
+    "image": "https://i.ibb.co/FKt8Jdj/smoothie.jpg",
+    "category": "Beverage",
+    "price": 4.99,
+    "quantity": 0,
+    "count": 0,
+    "description": {
+      "details": "Refreshing mango smoothie with a hint of tropical flavors, perfect for a hot day.",
+      "ingredients": [
+        "Mango",
+        "Yogurt",
+        "Milk",
+        "Honey",
+        "Ice cubes"
+      ],
+      "procedure": [
+        "Peel and chop fresh mango.",
+        "Blend mango, yogurt, milk, honey, and ice cubes until smooth.",
+        "Pour into a glass and enjoy this tropical treat."
+      ]
+    },
+    "origin": "Tropical Region",
+    "madeBy": "Smoothie Delights"
+  },
+  {
+    "name": "Grilled Salmon",
+    "image": "https://i.ibb.co/LvZzFq5/salmon.jpg",
+    "category": "Seafood",
+    "price": 18.99,
+    "quantity": 0,
+    "count": 0,
+    "description": {
+      "details": "Flavorful grilled salmon fillet served with a lemon and herb marinade.",
+      "ingredients": [
+        "Salmon fillet",
+        "Olive oil",
+        "Lemon juice",
+        "Garlic",
+        "Dill",
+        "Salt",
+        "Black pepper"
+      ],
+      "procedure": [
+        "In a bowl, mix olive oil, lemon juice, minced garlic, chopped dill, salt, and black pepper.",
+        "Marinate the salmon fillet in the mixture for at least 30 minutes.",
+        "Grill the salmon fillet until cooked through and edges are slightly crispy.",
+        "Serve with additional lemon wedges."
+      ]
+    },
+    "origin": "Norway",
+    "madeBy": "Seafood Grill House"
+  },
+  {
+    "name": "Caprese Panini",
+    "image": "https://i.ibb.co/7bLMSD5/sandwich.jpg",
+    "category": "Sandwich",
+    "price": 11.99,
+    "quantity": 0,
+    "count": 0,
+    "description": {
+      "details": "Classic Caprese panini with mozzarella, tomatoes, and fresh basil.",
+      "ingredients": [
+        "Ciabatta bread",
+        "Fresh mozzarella",
+        "Tomatoes",
+        "Fresh basil leaves",
+        "Balsamic glaze",
+        "Butter"
+      ],
+      "procedure": [
+        "Slice ciabatta bread and spread butter on one side of each slice.",
+        "Layer fresh mozzarella, sliced tomatoes, and fresh basil leaves on the bread.",
+        "Drizzle with balsamic glaze.",
+        "Top with another slice of bread (butter side out).",
+        "Grill until the bread is toasted and the cheese is melted."
+      ]
+    },
+    "origin": "Italy",
+    "madeBy": "Panini Paradise"
+  },
+  {
+    "name": "Fruit Salad Bowl",
+    "image": "https://i.ibb.co/vjDfcGX/fruit-Salad.jpg",
+    "category": "Salad",
+    "price": 7.99,
+    "quantity": 0,
+    "count": 0,
+    "description": {
+      "details": "A colorful bowl of mixed fruits, perfect for a light and healthy snack.",
+      "ingredients": [
+        "Strawberries",
+        "Blueberries",
+        "Kiwi",
+        "Grapes",
+        "Pineapple",
+        "Mint leaves",
+        "Honey"
+      ],
+      "procedure": [
+        "Wash and chop strawberries, kiwi, and pineapple.",
+        "Combine all the fruits in a bowl.",
+        "Drizzle with honey and garnish with mint leaves.",
+        "Toss gently and serve."
+      ]
+    },
+    "origin": "International",
+    "madeBy": "Fresh & Healthy"
+  },
+  {
+    "name": "Cheese Platter",
+    "image": "https://i.ibb.co/w4Y8XxX/cheese.jpg",
+    "category": "Appetizer",
+    "price": 14.99,
+    "quantity": 0,
+    "count": 0,
+    "description": {
+      "details": "An exquisite selection of cheeses, crackers, and fresh fruits for a delightful appetizer.",
+      "ingredients": [
+        "Assorted cheeses (e.g., Brie, Camembert, Gouda)",
+        "Crackers",
+        "Grapes",
+        "Fig jam",
+        "Nuts (e.g., almonds, walnuts)"
+      ],
+      "procedure": [
+        "Arrange a variety of cheeses on a platter.",
+        "Add crackers, grapes, and nuts for a balanced spread.",
+        "Serve with fig jam for added flavor."
+      ]
+    },
+    "origin": "Various",
+    "madeBy": "Gourmet Delights"
+  }
+]

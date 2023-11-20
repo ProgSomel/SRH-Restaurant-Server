@@ -2,7 +2,7 @@ const express = require("express");
 const cors = require("cors");
 var jwt = require("jsonwebtoken");
 var cookieParser = require("cookie-parser");
-const { MongoClient, ServerApiVersion } = require("mongodb");
+const { MongoClient, ServerApiVersion, ObjectId } = require("mongodb");
 const app = express();
 require("dotenv").config();
 const port = process.env.PORT || 5000;
@@ -81,6 +81,13 @@ async function run() {
       console.log(total);
       res.send({ total, result });
     });
+
+    app.get('/api/v1/all-foods-items/:foodId', async(req, res) => {
+      const id = req.params.foodId;
+      const query = {_id: new ObjectId(id)}
+      const result = await foodssCollection.findOne(query);
+      res.send(result);
+    })
 
     await client.db("admin").command({ ping: 1 });
     console.log(
