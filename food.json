@@ -4,8 +4,9 @@
     "image": "https://i.ibb.co/HT2yN6C/pixxa.jpg",
     "category": "Pizza",
     "price": 12.99,
-    "quantity": 0,
+    "quantity": 10,
     "count": 0,
+    "totalSell": 0,
     "description": {
       "details": "Delicious Margherita pizza topped with fresh tomatoes, mozzarella, and basil.",
       "ingredients": [
@@ -33,8 +34,9 @@
     "image": "https://i.ibb.co/kS45z2L/pasta.jpg",
     "category": "Pasta",
     "price": 15.99,
-    "quantity": 0,
+    "quantity": 15,
     "count": 0,
+    "totalSell": 0,
     "description": {
       "details": "Creamy Alfredo pasta with grilled chicken and Parmesan cheese.",
       "ingredients": [
@@ -65,8 +67,9 @@
     "image": "https://i.ibb.co/WnjTqWH/salad.jpg",
     "category": "Salad",
     "price": 8.99,
-    "quantity": 0,
+    "quantity": 20,
     "count": 0,
+    "totalSell": 0,
     "description": {
       "details": "Fresh Caesar salad with crisp romaine lettuce, croutons, and Caesar dressing.",
       "ingredients": [
@@ -90,8 +93,9 @@
     "image": "https://i.ibb.co/L5hxNSC/burger.jpg",
     "category": "Burger",
     "price": 9.99,
-    "quantity": 0,
+    "quantity": 18,
     "count": 0,
+    "totalSell": 0,
     "description": {
       "details": "Juicy beef burger with lettuce, tomato, onion, and your choice of condiments.",
       "ingredients": [
@@ -118,8 +122,9 @@
     "image": "https://i.ibb.co/rmRBgYM/brownie.jpg",
     "category": "Dessert",
     "price": 5.99,
-    "quantity": 0,
+    "quantity": 25,
     "count": 0,
+    "totalSell": 0,
     "description": {
       "details": "Decadent chocolate brownie served with a scoop of vanilla ice cream.",
       "ingredients": [
@@ -149,8 +154,9 @@
     "image": "https://i.ibb.co/xGDMRsK/susi.jpg",
     "category": "Sushi",
     "price": 10.99,
-    "quantity": 0,
+    "quantity": 30,
     "count": 0,
+    "totalSell": 0,
     "description": {
       "details": "A delightful assortment of vegetarian sushi rolls with fresh vegetables and avocado.",
       "ingredients": [
@@ -180,17 +186,12 @@
     "image": "https://i.ibb.co/FKt8Jdj/smoothie.jpg",
     "category": "Beverage",
     "price": 4.99,
-    "quantity": 0,
+    "quantity": 22,
     "count": 0,
+    "totalSell": 0,
     "description": {
       "details": "Refreshing mango smoothie with a hint of tropical flavors, perfect for a hot day.",
-      "ingredients": [
-        "Mango",
-        "Yogurt",
-        "Milk",
-        "Honey",
-        "Ice cubes"
-      ],
+      "ingredients": ["Mango", "Yogurt", "Milk", "Honey", "Ice cubes"],
       "procedure": [
         "Peel and chop fresh mango.",
         "Blend mango, yogurt, milk, honey, and ice cubes until smooth.",
@@ -205,8 +206,9 @@
     "image": "https://i.ibb.co/LvZzFq5/salmon.jpg",
     "category": "Seafood",
     "price": 18.99,
-    "quantity": 0,
+    "quantity": 12,
     "count": 0,
+    "totalSell": 0,
     "description": {
       "details": "Flavorful grilled salmon fillet served with a lemon and herb marinade.",
       "ingredients": [
@@ -233,8 +235,9 @@
     "image": "https://i.ibb.co/7bLMSD5/sandwich.jpg",
     "category": "Sandwich",
     "price": 11.99,
-    "quantity": 0,
+    "quantity": 14,
     "count": 0,
+    "totalSell": 0,
     "description": {
       "details": "Classic Caprese panini with mozzarella, tomatoes, and fresh basil.",
       "ingredients": [
@@ -261,8 +264,9 @@
     "image": "https://i.ibb.co/vjDfcGX/fruit-Salad.jpg",
     "category": "Salad",
     "price": 7.99,
-    "quantity": 0,
+    "quantity": 16,
     "count": 0,
+    "totalSell": 0,
     "description": {
       "details": "A colorful bowl of mixed fruits, perfect for a light and healthy snack.",
       "ingredients": [
@@ -289,8 +293,9 @@
     "image": "https://i.ibb.co/w4Y8XxX/cheese.jpg",
     "category": "Appetizer",
     "price": 14.99,
-    "quantity": 0,
+    "quantity": 10,
     "count": 0,
+    "totalSell": 0,
     "description": {
       "details": "An exquisite selection of cheeses, crackers, and fresh fruits for a delightful appetizer.",
       "ingredients": [
@@ -302,8 +307,7 @@
       ],
       "procedure": [
         "Arrange a variety of cheeses on a platter.",
-        "Add crackers, grapes, and nuts for a balanced spread.",
-        "Serve with fig jam for added flavor."
+        "Add crackers, grapes, and nuts for a balanced spread."
       ]
     },
     "origin": "Various",

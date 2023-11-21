@@ -38,7 +38,9 @@ async function run() {
 
     const usersCollection = client.db("SRHRestaurant").collection("users");
 
-    const foodssCollection = client.db("SRHRestaurant").collection("foods");
+    const foodsCollection = client.db("SRHRestaurant").collection("foods");
+
+    const ordersCollection = client.db("SRHRestaurant").collection("orders");
 
     //! Auth
     app.post("/api/v1/create-token", async (req, res) => {
@@ -74,10 +76,10 @@ async function run() {
         query.name = { $regex: new RegExp(foodName, "i") };
       }
 
-      const cursor = foodssCollection.find(query).skip(skip).limit(limit);
+      const cursor = foodsCollection.find(query).skip(skip).limit(limit);
 
       const result = await cursor.toArray();
-      const total = await foodssCollection.countDocuments();
+      const total = await foodsCollection.countDocuments();
       console.log(total);
       res.send({ total, result });
     });
@@ -85,7 +87,14 @@ async function run() {
     app.get('/api/v1/all-foods-items/:foodId', async(req, res) => {
       const id = req.params.foodId;
       const query = {_id: new ObjectId(id)}
-      const result = await foodssCollection.findOne(query);
+      const result = await foodsCollection.findOne(query);
+      res.send(result);
+    })
+
+    //! Orders 
+    app.post('/api/v1/create-order', async(req, res)=> {
+      const order = req.body;
+      const result = await ordersCollection.insertOne(order);
       res.send(result);
     })
 
