@@ -84,19 +84,29 @@ async function run() {
       res.send({ total, result });
     });
 
-    app.get('/api/v1/all-foods-items/:foodId', async(req, res) => {
+    app.get("/api/v1/all-foods-items/:foodId", async (req, res) => {
       const id = req.params.foodId;
-      const query = {_id: new ObjectId(id)}
+      const query = { _id: new ObjectId(id) };
       const result = await foodsCollection.findOne(query);
       res.send(result);
-    })
+    });
 
-    //! Orders 
-    app.post('/api/v1/create-order', async(req, res)=> {
+    //! Orders
+    app.post("/api/v1/create-order", async (req, res) => {
       const order = req.body;
       const result = await ordersCollection.insertOne(order);
       res.send(result);
-    })
+    });
+
+    app.get("/api/v1/orders", async (req, res) => {
+      
+     
+     
+      const cursor = ordersCollection.find();
+      const result = await cursor.toArray();
+      
+      res.send(result);
+    });
 
     await client.db("admin").command({ ping: 1 });
     console.log(
