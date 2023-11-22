@@ -105,6 +105,12 @@ async function run() {
       res.send(updateResult);
     });
 
+    app.get("/api/v1/top-selling-foods", async (req, res) => {
+      const cursor =  foodsCollection.find().sort({totalSell:-1}).limit(6);
+      const result = await cursor.toArray();
+      res.send(result);
+    });
+
     //! Orders
     app.post("/api/v1/create-order", async (req, res) => {
       const order = req.body;
