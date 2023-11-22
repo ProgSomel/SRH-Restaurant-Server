@@ -105,6 +105,32 @@ async function run() {
       res.send(updateResult);
     });
 
+    app.put("/api/v1/all-foods-items/:id", async (req, res) => {
+      const id = req.params.id;
+      const updateFood = req.body;
+      const filter = { _id: new ObjectId(id) };
+
+      const updateDoc = {
+        $set: {
+          name: updateFood.foodName,
+
+          image: updateFood.foodImage,
+
+          category: updateFood.foodCategory,
+
+          price: updateFood.price,
+
+          description: updateFood.foodDescription,
+
+          origin: updateFood.foodOrigin,
+          madeBy: updateFood.madeBy,
+        },
+      };
+
+      const updateResult = await foodsCollection.updateOne(filter, updateDoc);
+      res.send(updateResult);
+    });
+
     app.get("/api/v1/top-selling-foods", async (req, res) => {
       const cursor = foodsCollection.find().sort({ totalSell: -1 }).limit(6);
       const result = await cursor.toArray();
