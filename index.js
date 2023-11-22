@@ -106,7 +106,7 @@ async function run() {
     });
 
     app.get("/api/v1/top-selling-foods", async (req, res) => {
-      const cursor =  foodsCollection.find().sort({totalSell:-1}).limit(6);
+      const cursor = foodsCollection.find().sort({ totalSell: -1 }).limit(6);
       const result = await cursor.toArray();
       res.send(result);
     });
@@ -122,6 +122,15 @@ async function run() {
       const cursor = ordersCollection.find();
       const result = await cursor.toArray();
 
+      res.send(result);
+    });
+
+    //! My Profile
+    app.get("/api/v1/myAddedFoodItems", async (req, res) => {
+      const email = req.query.email;
+      const query = { "addedBy.email": email };
+      const cursor = foodsCollection.find(query);
+      const result = await cursor.toArray();
       res.send(result);
     });
 

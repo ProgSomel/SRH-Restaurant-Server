@@ -26,7 +26,11 @@
       ]
     },
     "origin": "Italy",
-    "madeBy": "Pizzeria Italia"
+    "madeBy": "Pizzeria Italia",
+    "addedBy": {
+      "name": "Chef Mario",
+      "email": "chefmario@example.com"
+    }
   },
   {
     "name": "Chicken Alfredo Pasta",
@@ -34,7 +38,6 @@
     "category": "Pasta",
     "price": 15.99,
     "quantity": 15,
-
     "totalSell": 0,
     "description": {
       "details": "Creamy Alfredo pasta with grilled chicken and Parmesan cheese.",
@@ -59,7 +62,11 @@
       ]
     },
     "origin": "Italy",
-    "madeBy": "Trattoria Italiana"
+    "madeBy": "Trattoria Italiana",
+    "addedBy": {
+      "name": "Chef Giuseppe",
+      "email": "chefgiuseppe@example.com"
+    }
   },
   {
     "name": "Caesar Salad",
@@ -67,7 +74,6 @@
     "category": "Salad",
     "price": 8.99,
     "quantity": 20,
-
     "totalSell": 0,
     "description": {
       "details": "Fresh Caesar salad with crisp romaine lettuce, croutons, and Caesar dressing.",
@@ -85,7 +91,11 @@
       ]
     },
     "origin": "United States",
-    "madeBy": "Salad Express"
+    "madeBy": "Salad Express",
+    "addedBy": {
+      "name": "Chef Sandra",
+      "email": "chefsandra@example.com"
+    }
   },
   {
     "name": "Beef Burger",
@@ -93,7 +103,6 @@
     "category": "Burger",
     "price": 9.99,
     "quantity": 18,
-
     "totalSell": 0,
     "description": {
       "details": "Juicy beef burger with lettuce, tomato, onion, and your choice of condiments.",
@@ -114,7 +123,11 @@
       ]
     },
     "origin": "United States",
-    "madeBy": "Burger Haven"
+    "madeBy": "Burger Haven",
+    "addedBy": {
+      "name": "Chef James",
+      "email": "chefjames@example.com"
+    }
   },
   {
     "name": "Chocolate Brownie",
@@ -122,7 +135,6 @@
     "category": "Dessert",
     "price": 5.99,
     "quantity": 25,
-
     "totalSell": 0,
     "description": {
       "details": "Decadent chocolate brownie served with a scoop of vanilla ice cream.",
@@ -146,7 +158,11 @@
       ]
     },
     "origin": "United States",
-    "madeBy": "Sweet Delights Bakery"
+    "madeBy": "Sweet Delights Bakery",
+    "addedBy": {
+      "name": "Pastry Chef Emily",
+      "email": "chefemily@example.com"
+    }
   },
   {
     "name": "Vegetarian Sushi",
@@ -154,7 +170,6 @@
     "category": "Sushi",
     "price": 10.99,
     "quantity": 30,
-
     "totalSell": 0,
     "description": {
       "details": "A delightful assortment of vegetarian sushi rolls with fresh vegetables and avocado.",
@@ -178,7 +193,11 @@
       ]
     },
     "origin": "Japan",
-    "madeBy": "Sushi Masters"
+    "madeBy": "Sushi Masters",
+    "addedBy": {
+      "name": "Sushi Chef Hiroshi",
+      "email": "chefhiroshi@example.com"
+    }
   },
   {
     "name": "Mango Tango Smoothie",
@@ -186,7 +205,6 @@
     "category": "Beverage",
     "price": 4.99,
     "quantity": 22,
-
     "totalSell": 0,
     "description": {
       "details": "Refreshing mango smoothie with a hint of tropical flavors, perfect for a hot day.",
@@ -198,7 +216,11 @@
       ]
     },
     "origin": "Tropical Region",
-    "madeBy": "Smoothie Delights"
+    "madeBy": "Smoothie Delights",
+    "addedBy": {
+      "name": "Beverage Specialist Olivia",
+      "email": "bevspecialistolivia@example.com"
+    }
   },
   {
     "name": "Grilled Salmon",
@@ -206,7 +228,6 @@
     "category": "Seafood",
     "price": 18.99,
     "quantity": 12,
-
     "totalSell": 0,
     "description": {
       "details": "Flavorful grilled salmon fillet served with a lemon and herb marinade.",
@@ -227,7 +248,11 @@
       ]
     },
     "origin": "Norway",
-    "madeBy": "Seafood Grill House"
+    "madeBy": "Seafood Grill House",
+    "addedBy": {
+      "name": "Chef Sebastian",
+      "email": "chefsebastian@example.com"
+    }
   },
   {
     "name": "Caprese Panini",
@@ -235,7 +260,6 @@
     "category": "Sandwich",
     "price": 11.99,
     "quantity": 14,
-
     "totalSell": 0,
     "description": {
       "details": "Classic Caprese panini with mozzarella, tomatoes, and fresh basil.",
@@ -256,7 +280,11 @@
       ]
     },
     "origin": "Italy",
-    "madeBy": "Panini Paradise"
+    "madeBy": "Panini Paradise",
+    "addedBy": {
+      "name": "Chef Gabriella",
+      "email": "chefgabriella@example.com"
+    }
   },
   {
     "name": "Fruit Salad Bowl",
@@ -264,7 +292,6 @@
     "category": "Salad",
     "price": 7.99,
     "quantity": 16,
-
     "totalSell": 0,
     "description": {
       "details": "A colorful bowl of mixed fruits, perfect for a light and healthy snack.",
@@ -285,7 +312,11 @@
       ]
     },
     "origin": "International",
-    "madeBy": "Fresh & Healthy"
+    "madeBy": "Fresh & Healthy",
+    "addedBy": {
+      "name": "Nutritionist Alex",
+      "email": "nutritionistalex@example.com"
+    }
   },
   {
     "name": "Cheese Platter",
@@ -293,7 +324,6 @@
     "category": "Appetizer",
     "price": 14.99,
     "quantity": 10,
-
     "totalSell": 0,
     "description": {
       "details": "An exquisite selection of cheeses, crackers, and fresh fruits for a delightful appetizer.",
@@ -310,6 +340,10 @@
       ]
     },
     "origin": "Various",
-    "madeBy": "Gourmet Delights"
+    "madeBy": "Gourmet Delights",
+    "addedBy": {
+      "name": "Chef Antoine",
+      "email": "chefantoine@example.com"
+    }
   }
 ]
