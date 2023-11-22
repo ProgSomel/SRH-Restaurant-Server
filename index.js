@@ -45,7 +45,6 @@ async function run() {
     //! Auth
     app.post("/api/v1/create-token", async (req, res) => {
       const user = req.body;
-      console.log(user.email);
       const token = jwt.sign(user, secret, { expiresIn: 60 * 60 });
       console.log(token);
       res
@@ -80,7 +79,6 @@ async function run() {
 
       const result = await cursor.toArray();
       const total = await foodsCollection.countDocuments();
-      console.log(total);
       res.send({ total, result });
     });
 
@@ -91,6 +89,22 @@ async function run() {
       res.send(result);
     });
 
+    app.patch("/api/v1/all-foods-items/:id", async (req, res) => {
+      const id = req.params.id;
+      const updateFood = req.body;
+      const filter = { _id: new ObjectId(id) };
+
+      const updateDoc = {
+        $set: {
+          totalSell: updateFood.totalSold,
+          quantity: updateFood.quantity,
+        },
+      };
+
+      const updateResult = await foodsCollection.updateOne(filter, updateDoc);
+      res.send(updateResult);
+    });
+
     //! Orders
     app.post("/api/v1/create-order", async (req, res) => {
       const order = req.body;
@@ -99,12 +113,9 @@ async function run() {
     });
 
     app.get("/api/v1/orders", async (req, res) => {
-      
-     
-     
       const cursor = ordersCollection.find();
       const result = await cursor.toArray();
-      
+
       res.send(result);
     });
 

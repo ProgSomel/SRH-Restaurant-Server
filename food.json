@@ -5,7 +5,6 @@
     "category": "Pizza",
     "price": 12.99,
     "quantity": 10,
-    "count": 0,
     "totalSell": 0,
     "description": {
       "details": "Delicious Margherita pizza topped with fresh tomatoes, mozzarella, and basil.",
@@ -35,7 +34,7 @@
     "category": "Pasta",
     "price": 15.99,
     "quantity": 15,
-    "count": 0,
+
     "totalSell": 0,
     "description": {
       "details": "Creamy Alfredo pasta with grilled chicken and Parmesan cheese.",
@@ -68,7 +67,7 @@
     "category": "Salad",
     "price": 8.99,
     "quantity": 20,
-    "count": 0,
+
     "totalSell": 0,
     "description": {
       "details": "Fresh Caesar salad with crisp romaine lettuce, croutons, and Caesar dressing.",
@@ -94,7 +93,7 @@
     "category": "Burger",
     "price": 9.99,
     "quantity": 18,
-    "count": 0,
+
     "totalSell": 0,
     "description": {
       "details": "Juicy beef burger with lettuce, tomato, onion, and your choice of condiments.",
@@ -123,7 +122,7 @@
     "category": "Dessert",
     "price": 5.99,
     "quantity": 25,
-    "count": 0,
+
     "totalSell": 0,
     "description": {
       "details": "Decadent chocolate brownie served with a scoop of vanilla ice cream.",
@@ -155,7 +154,7 @@
     "category": "Sushi",
     "price": 10.99,
     "quantity": 30,
-    "count": 0,
+
     "totalSell": 0,
     "description": {
       "details": "A delightful assortment of vegetarian sushi rolls with fresh vegetables and avocado.",
@@ -187,7 +186,7 @@
     "category": "Beverage",
     "price": 4.99,
     "quantity": 22,
-    "count": 0,
+
     "totalSell": 0,
     "description": {
       "details": "Refreshing mango smoothie with a hint of tropical flavors, perfect for a hot day.",
@@ -207,7 +206,7 @@
     "category": "Seafood",
     "price": 18.99,
     "quantity": 12,
-    "count": 0,
+
     "totalSell": 0,
     "description": {
       "details": "Flavorful grilled salmon fillet served with a lemon and herb marinade.",
@@ -236,7 +235,7 @@
     "category": "Sandwich",
     "price": 11.99,
     "quantity": 14,
-    "count": 0,
+
     "totalSell": 0,
     "description": {
       "details": "Classic Caprese panini with mozzarella, tomatoes, and fresh basil.",
@@ -265,7 +264,7 @@
     "category": "Salad",
     "price": 7.99,
     "quantity": 16,
-    "count": 0,
+
     "totalSell": 0,
     "description": {
       "details": "A colorful bowl of mixed fruits, perfect for a light and healthy snack.",
@@ -294,7 +293,7 @@
     "category": "Appetizer",
     "price": 14.99,
     "quantity": 10,
-    "count": 0,
+
     "totalSell": 0,
     "description": {
       "details": "An exquisite selection of cheeses, crackers, and fresh fruits for a delightful appetizer.",
