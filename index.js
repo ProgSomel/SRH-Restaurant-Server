@@ -89,6 +89,14 @@ async function run() {
       res.send(result);
     });
 
+    app.post("/api/v1/all-foods-items", async (req, res) => {
+      const food = req.body;
+      const result = await foodsCollection.insertOne(food);
+      console.log(food);
+      res.send(result);
+    });
+
+
     app.patch("/api/v1/all-foods-items/:id", async (req, res) => {
       const id = req.params.id;
       const updateFood = req.body;

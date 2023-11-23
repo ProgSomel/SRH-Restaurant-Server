@@ -6,25 +6,7 @@
     "price": 12.99,
     "quantity": 10,
     "totalSell": 0,
-    "description": {
-      "details": "Delicious Margherita pizza topped with fresh tomatoes, mozzarella, and basil.",
-      "ingredients": [
-        "Pizza dough",
-        "Tomatoes",
-        "Fresh mozzarella",
-        "Fresh basil leaves",
-        "Olive oil",
-        "Salt",
-        "Black pepper"
-      ],
-      "procedure": [
-        "Preheat the oven to 475°F (245°C).",
-        "Roll out the pizza dough on a floured surface.",
-        "Top the dough with sliced tomatoes, fresh mozzarella, and basil leaves.",
-        "Drizzle with olive oil and season with salt and black pepper.",
-        "Bake in the preheated oven for 12-15 minutes or until the crust is golden brown."
-      ]
-    },
+    "description": "Delicious Margherita pizza topped with fresh tomatoes, mozzarella, and basil.",
     "origin": "Italy",
     "madeBy": "Pizzeria Italia",
     "addedBy": {
@@ -39,28 +21,7 @@
     "price": 15.99,
     "quantity": 15,
     "totalSell": 0,
-    "description": {
-      "details": "Creamy Alfredo pasta with grilled chicken and Parmesan cheese.",
-      "ingredients": [
-        "Fettuccine pasta",
-        "Chicken breast",
-        "Heavy cream",
-        "Parmesan cheese",
-        "Garlic",
-        "Butter",
-        "Salt",
-        "Black pepper",
-        "Fresh parsley (for garnish)"
-      ],
-      "procedure": [
-        "Cook the fettuccine pasta according to package instructions.",
-        "In a separate pan, cook chicken breast and set aside.",
-        "In the same pan, melt butter and sauté garlic until fragrant.",
-        "Add heavy cream, Parmesan cheese, salt, and black pepper. Stir until the sauce thickens.",
-        "Combine cooked pasta and grilled chicken with the Alfredo sauce.",
-        "Garnish with fresh parsley and serve."
-      ]
-    },
+    "description": "Creamy Alfredo pasta with grilled chicken and Parmesan cheese.",
     "origin": "Italy",
     "madeBy": "Trattoria Italiana",
     "addedBy": {
@@ -75,26 +36,12 @@
     "price": 8.99,
     "quantity": 20,
     "totalSell": 0,
-    "description": {
-      "details": "Fresh Caesar salad with crisp romaine lettuce, croutons, and Caesar dressing.",
-      "ingredients": [
-        "Romaine lettuce",
-        "Croutons",
-        "Parmesan cheese",
-        "Caesar dressing"
-      ],
-      "procedure": [
-        "Wash and chop the romaine lettuce.",
-        "Add croutons and Parmesan cheese.",
-        "Toss with Caesar dressing until well coated.",
-        "Serve chilled."
-      ]
-    },
+    "description": "Fresh Caesar salad with crisp romaine lettuce, croutons, and Caesar dressing.",
     "origin": "United States",
     "madeBy": "Salad Express",
     "addedBy": {
-      "name": "Chef Sandra",
-      "email": "chefsandra@example.com"
+      "name": "Somel Ahmed",
+      "email": "somelahmed88@gmail.com"
     }
   },
   {
@@ -104,29 +51,12 @@
     "price": 9.99,
     "quantity": 18,
     "totalSell": 0,
-    "description": {
-      "details": "Juicy beef burger with lettuce, tomato, onion, and your choice of condiments.",
-      "ingredients": [
-        "Ground beef",
-        "Burger buns",
-        "Lettuce",
-        "Tomato",
-        "Onion",
-        "Condiments of your choice"
-      ],
-      "procedure": [
-        "Form ground beef into patties.",
-        "Grill or cook the patties to your desired level of doneness.",
-        "Toast the burger buns.",
-        "Assemble the burger with lettuce, tomato, onion, and condiments.",
-        "Serve and enjoy!"
-      ]
-    },
+    "description": "Juicy beef burger with lettuce, tomato, onion, and your choice of condiments.",
     "origin": "United States",
     "madeBy": "Burger Haven",
     "addedBy": {
-      "name": "Chef James",
-      "email": "chefjames@example.com"
+      "name": "Somel Ahmed",
+      "email": "somelahmed88@gmail.com"
     }
   },
   {
@@ -136,32 +66,12 @@
     "price": 5.99,
     "quantity": 25,
     "totalSell": 0,
-    "description": {
-      "details": "Decadent chocolate brownie served with a scoop of vanilla ice cream.",
-      "ingredients": [
-        "All-purpose flour",
-        "Cocoa powder",
-        "Butter",
-        "Sugar",
-        "Eggs",
-        "Vanilla extract",
-        "Salt",
-        "Vanilla ice cream (for serving)"
-      ],
-      "procedure": [
-        "Preheat the oven to 350°F (175°C).",
-        "Mix flour, cocoa powder, and salt in a bowl.",
-        "Melt butter and mix with sugar, eggs, and vanilla extract.",
-        "Combine wet and dry ingredients.",
-        "Pour the batter into a greased baking pan and bake for 20-25 minutes.",
-        "Serve with a scoop of vanilla ice cream."
-      ]
-    },
+    "description": "Decadent chocolate brownie served with a scoop of vanilla ice cream.",
     "origin": "United States",
     "madeBy": "Sweet Delights Bakery",
     "addedBy": {
-      "name": "Pastry Chef Emily",
-      "email": "chefemily@example.com"
+      "name": "Somel Ahmed",
+      "email": "somelahmed88@gmail.com"
     }
   },
   {
@@ -171,33 +81,12 @@
     "price": 10.99,
     "quantity": 30,
     "totalSell": 0,
-    "description": {
-      "details": "A delightful assortment of vegetarian sushi rolls with fresh vegetables and avocado.",
-      "ingredients": [
-        "Sushi rice",
-        "Nori (seaweed)",
-        "Cucumber",
-        "Carrot",
-        "Avocado",
-        "Soy sauce",
-        "Pickled ginger",
-        "Wasabi"
-      ],
-      "procedure": [
-        "Cook sushi rice and let it cool.",
-        "Place a sheet of nori on a bamboo sushi mat.",
-        "Spread a layer of rice on the nori.",
-        "Add sliced cucumber, carrot, and avocado.",
-        "Roll the sushi tightly and cut into bite-sized pieces.",
-        "Serve with soy sauce, pickled ginger, and wasabi."
-      ]
-    },
+    "description": "A delightful assortment of vegetarian sushi rolls with fresh vegetables and avocado.",
     "origin": "Japan",
     "madeBy": "Sushi Masters",
     "addedBy": {
-      "name": "Sushi Chef Hiroshi",
-      "email": "chefhiroshi@example.com"
+      "name": "Somel Ahmed",
+      "email": "somelahmed88@gmail.com"
     }
-  },
-  
+  }
 ]
