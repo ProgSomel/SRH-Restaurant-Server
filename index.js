@@ -12,7 +12,10 @@ const secret = process.env.JWT_SECRET || "defaultSecret";
 //! middlewires
 app.use(
   cors({
-    origin: "http://localhost:5173",
+    origin: [
+      "https://srh-restaurant.web.app",
+      "https://srh-restaurant.firebaseapp.com",
+    ],
     credentials: true,
   })
 );
@@ -108,7 +111,7 @@ async function run() {
 
     app.get(
       "/api/v1/all-foods-items/:foodId",
-      verifyToken,
+      
 
       async (req, res) => {
         const id = req.params.foodId;
@@ -205,12 +208,8 @@ async function run() {
     });
 
     //! My Profile
-    app.get("/api/v1/myAddedFoodItems", verifyToken, async (req, res) => {
+    app.get("/api/v1/myAddedFoodItems", async (req, res) => {
       const queryEmail = req.query.email;
-      const tokenEmail = req.user.email;
-      if (queryEmail !== tokenEmail) {
-        return res.status(403).send({ message: "forbidden access" });
-      }
 
       const query = { "addedBy.email": queryEmail };
       const cursor = foodsCollection.find(query);
