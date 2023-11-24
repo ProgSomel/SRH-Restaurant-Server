@@ -1,0 +1,82 @@
+[
+  {
+    "title": "Delicious Experience",
+    "description": "The food was amazing, and the service was excellent. A delightful dining experience!",
+    "reviewerImage": "https://placekitten.com/100/100",
+    "rating": 5,
+    "date": "2023-11-24",
+    "reviewerName": "John Doe"
+  },
+  {
+    "title": "Highly Recommend",
+    "description": "I tried several dishes, and each one was better than the last. Highly recommended!",
+    "reviewerImage": "https://placekitten.com/100/101",
+    "rating": 4,
+    "date": "2023-11-22",
+    "reviewerName": "Jane Smith"
+  },
+  {
+    "title": "Fantastic Service",
+    "description": "The staff was friendly, and the food arrived quickly. A fantastic overall experience.",
+    "reviewerImage": "https://placekitten.com/100/102",
+    "rating": 5,
+    "date": "2023-11-20",
+    "reviewerName": "Alice Johnson"
+  },
+  {
+    "title": "Mouthwatering Delight",
+    "description": "Every bite was a burst of flavors. I can't wait to visit again!",
+    "reviewerImage": "https://placekitten.com/100/103",
+    "rating": 5,
+    "date": "2023-11-18",
+    "reviewerName": "Bob Anderson"
+  },
+  {
+    "title": "Cozy Atmosphere",
+    "description": "The ambiance of the restaurant is cozy and inviting. Perfect for a relaxing meal.",
+    "reviewerImage": "https://placekitten.com/100/104",
+    "rating": 4,
+    "date": "2023-11-15",
+    "reviewerName": "Eva White"
+  },
+  {
+    "title": "Exquisite Culinary Delight",
+    "description": "This place never disappoints! The flavors are exquisite, and the presentation is top-notch.",
+    "reviewerImage": "https://placekitten.com/100/105",
+    "rating": 5,
+    "date": "2023-11-12",
+    "reviewerName": "Michael Brown"
+  },
+  {
+    "title": "Hidden Gem",
+    "description": "Stumbled upon this gem of a restaurant. The food is a hidden treasure in the culinary world.",
+    "reviewerImage": "https://placekitten.com/100/106",
+    "rating": 4,
+    "date": "2023-11-10",
+    "reviewerName": "Sophia Martinez"
+  },
+  {
+    "title": "Perfect for Celebrations",
+    "description": "Celebrated a special occasion here. The staff went above and beyond to make it memorable.",
+    "reviewerImage": "https://placekitten.com/100/107",
+    "rating": 5,
+    "date": "2023-11-08",
+    "reviewerName": "Daniel Taylor"
+  },
+  {
+    "title": "Variety of Flavors",
+    "description": "The menu offers a diverse range of flavors. There's something for everyone!",
+    "reviewerImage": "https://placekitten.com/100/108",
+    "rating": 4,
+    "date": "2023-11-05",
+    "reviewerName": "Olivia Rodriguez"
+  },
+  {
+    "title": "Friendly Staff",
+    "description": "The friendly staff adds to the overall positive experience. Always a pleasure to dine here.",
+    "reviewerImage": "https://placekitten.com/100/109",
+    "rating": 5,
+    "date": "2023-11-03",
+    "reviewerName": "William Clark"
+  }
+]

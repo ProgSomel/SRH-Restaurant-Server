@@ -16,8 +16,8 @@ app.use(
     credentials: true,
   })
 );
-app.use(cookieParser());
 app.use(express.json());
+app.use(cookieParser());
 
 const uri = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@cluster0.dzik2b9.mongodb.net/?retryWrites=true&w=majority`;
 
@@ -41,6 +41,30 @@ async function run() {
     const foodsCollection = client.db("SRHRestaurant").collection("foods");
 
     const ordersCollection = client.db("SRHRestaurant").collection("orders");
+
+    const reviewsCollection = client.db("SRHRestaurant").collection("reviews");
+
+    //! verify token and GrantAccess
+    const verifyToken = (req, res, next) => {
+      const token = req.cookies.token;
+
+      if (!token) {
+        return res
+          .status(401)
+          .send({ message: "You are not authorized to access this" });
+      }
+
+      jwt.verify(token, secret, (err, decoded) => {
+        if (err) {
+          return res
+            .status(401)
+            .send({ message: "You are not authorized to access this" });
+        }
+
+        req.user = decoded;
+        next();
+      });
+    };
 
     //! Auth
     app.post("/api/v1/create-token", async (req, res) => {
@@ -82,12 +106,17 @@ async function run() {
       res.send({ total, result });
     });
 
-    app.get("/api/v1/all-foods-items/:foodId", async (req, res) => {
-      const id = req.params.foodId;
-      const query = { _id: new ObjectId(id) };
-      const result = await foodsCollection.findOne(query);
-      res.send(result);
-    });
+    app.get(
+      "/api/v1/all-foods-items/:foodId",
+      verifyToken,
+
+      async (req, res) => {
+        const id = req.params.foodId;
+        const query = { _id: new ObjectId(id) };
+        const result = await foodsCollection.findOne(query);
+        res.send(result);
+      }
+    );
 
     app.post("/api/v1/all-foods-items", async (req, res) => {
       const food = req.body;
@@ -151,13 +180,13 @@ async function run() {
       res.send(result);
     });
 
-    
-
     app.get("/api/v1/orders", async (req, res) => {
+      const queryEmail = req.query.email;
+
       let query = {};
-      const userEmail = req.query.email;
-      if(userEmail){
-        query={buyerEmail: userEmail}
+
+      if (queryEmail) {
+        query = { buyerEmail: queryEmail };
       }
       const cursor = ordersCollection.find(query);
       const result = await cursor.toArray();
@@ -165,11 +194,34 @@ async function run() {
       res.send(result);
     });
 
+    app.delete("/api/v1/orders", async (req, res) => {
+      const food = req.query.foodName;
+      let query = {};
+      if (food) {
+        query = { foodName: food };
+      }
+      const result = await ordersCollection.deleteOne(query);
+      res.send(result);
+    });
+
     //! My Profile
-    app.get("/api/v1/myAddedFoodItems", async (req, res) => {
-      const email = req.query.email;
-      const query = { "addedBy.email": email };
+    app.get("/api/v1/myAddedFoodItems", verifyToken, async (req, res) => {
+      const queryEmail = req.query.email;
+      const tokenEmail = req.user.email;
+      if (queryEmail !== tokenEmail) {
+        return res.status(403).send({ message: "forbidden access" });
+      }
+
+      const query = { "addedBy.email": queryEmail };
       const cursor = foodsCollection.find(query);
+      const result = await cursor.toArray();
+      res.send(result);
+    });
+
+    //! Reviews
+    //! Reviews
+    app.get("/api/v1/reviews", async (req, res) => {
+      const cursor = reviewsCollection.find();
       const result = await cursor.toArray();
       res.send(result);
     });
