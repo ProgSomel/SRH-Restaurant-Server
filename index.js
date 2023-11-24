@@ -96,7 +96,6 @@ async function run() {
       res.send(result);
     });
 
-
     app.patch("/api/v1/all-foods-items/:id", async (req, res) => {
       const id = req.params.id;
       const updateFood = req.body;
@@ -152,8 +151,15 @@ async function run() {
       res.send(result);
     });
 
+    
+
     app.get("/api/v1/orders", async (req, res) => {
-      const cursor = ordersCollection.find();
+      let query = {};
+      const userEmail = req.query.email;
+      if(userEmail){
+        query={buyerEmail: userEmail}
+      }
+      const cursor = ordersCollection.find(query);
       const result = await cursor.toArray();
 
       res.send(result);
